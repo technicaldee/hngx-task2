@@ -1,6 +1,10 @@
 # hngx-task2
 An Editable CV for zuri task2
 
+![Screenshot Home](./task2-1.png)
+![Screenshot Edit](./task2-2.png)
+
+
 It is built using Kotlin and it utilizes native views and sharedPreferences. No other third party packages or libraries used
 
 To View demo:
