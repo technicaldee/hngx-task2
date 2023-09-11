@@ -8,35 +8,123 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:contentDescription="@string/name"
         android:src="@drawable/edidiong"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/text"
+    <LinearLayout
+        android:id="@+id/row0"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:paddingEnd="5dp"
+            android:paddingStart="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fname_title" />
 
-    <Button
-        android:id="@+id/openButton"
+        <TextView
+            android:id="@+id/the_fname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name" />
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="133dp"
-        android:layout_marginTop="30dp"
-        android:text="@string/button"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:contentDescription="@string/slack_name"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/text" />
+        app:layout_constraintTop_toTopOf="@id/row0"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textStyle="bold"
+            android:paddingEnd="5dp"
+            android:paddingStart="0dp"
+            android:layout_width="wrap_content"
+            android:text="@string/slack_title"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/slack_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/slack_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/row1"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="100dp"
+        android:id="@+id/textView2"
+        android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:paddingEnd="5dp"
+                android:paddingStart="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/github_title" />
+            <TextView
+                android:id="@+id/github_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/github_handle" />
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@id/textView2"
+    android:layout_marginTop="10dp"
+    android:padding="20dp"
+    android:id="@+id/textView3"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textStyle="bold"
+        android:paddingEnd="5dp"
+        android:paddingStart="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bio_title"/>
+    <TextView
+        android:id="@+id/bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bio" />
+</LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

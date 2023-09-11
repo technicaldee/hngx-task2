@@ -1,5 +1,18 @@
 <resources>
-    <string name="app_name">HNG_ONE</string>
-    <string name="name">Edidiong Udoh (@technicaldee)</string>
+    <string name="app_name">My CV</string>
+    <string name="fname_title">My Full Name: </string>
+    <string name="slack_title">My Slack Username: </string>
+    <string name="github_title">My GitHub Handle: </string>
+    <string name="bio_title">My Bio: </string>
+
+    <string name="name">Edidiong Joseph Udoh</string>
+    <string name="slack_name">TechnicalDee</string>
+    <string name="github_handle">technicaldee</string>
     <string name="button">Open GitHub</string>
+    <string name="bio">As per developer tradition, Hello World 👋🏾.
+I am a fullstack developer from Uyo, Nigeria
+
+🔭 Working on multiple frontend and backend projects using Javascript(VueJS, NodeJS, ExpressJS) and PHP(Laravel).
+🌱 Learning design patterns in depth. TailwindCSS superman. Sass advocate.</string>
+    <string name="save_edit">Save Edit</string>
 </resources>

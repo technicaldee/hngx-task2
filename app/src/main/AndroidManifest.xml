@@ -14,8 +14,8 @@
         android:theme="@style/Theme.HngStage1"
         tools:targetApi="31">
         <activity
-            android:name=".WebViewActivity"
-            android:label="My GitHub Page" >
+            android:name=".EditActivity"
+            android:label="Edit CV" >
         </activity>
         <activity
             android:name=".MainActivity"
